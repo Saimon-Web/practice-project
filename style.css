@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
 nav{
    display: flex;
@@ -22,19 +23,30 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    margin-right: 20px;
+    padding-left: 25px;
+    overflow: hidden;
+}
+nav ul li a:hover{
+    background-color: #E25B45;
+    padding: 10px;
 }
 hr{
     border: 1px solid #f7ecec;
 
 }
+
+main{
+  width:100%;
+ 
+}
 .first-section{
-  
+    margin: 0 auto;
+    padding: 0 70px;
 
 }
 .first-section-start{
-    width: 1200px;
-    margin: 0 auto;
+    
+    
     display: flex;
     align-items: center;
 }
@@ -72,13 +84,36 @@ hr{
 /* second section style */
 
 .second-section{
-  width: 1200px;
+  height: 800px;
   margin: 0 auto;
   margin-top: 100px;
+  background-color: blanchedalmond;
+}
+.type-part{
+   padding:0 140px;
+    display: flex;
+    flex-flow: column;
+  justify-content: center;
+}
+.type-part h2{
+    font-size: 45px;
+    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.type-part p{
+    font-size: 18px;
+    word-spacing: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: gray;
+    padding: 0 40px;
+    text-align: center;
 }
 .album{
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .image-info{
    position: relative;
@@ -116,4 +151,89 @@ hr{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 40px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 40px;
+}
+.single-blog{
+    display: flex;
+    align-items: center;
+}
+.blog-image img{
+    width: 250px;
+    height: 187px;
+    border-radius: 10px;
+}
+.blog-details{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+.blog-details a{
+    text-decoration: none;
+    color: gray;
+}
+.blog-details a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    padding: 20px 140px;
+    margin-top: 100px;
+}
+.footer-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.fothead{
+    color: rgb(211, 209, 209);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fot-one a{
+    display: block;
+    text-decoration: none;
+    color: rgb(219, 203, 203);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0;
+}
+.fot-one a:hover{
+    color: white;
+}
+.fot-button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius:25px;
+}
+.fot-button:hover{
+    background-color: white;
+    color: black;
+}
+input{
+    padding: 10px 30px;
+    color: black;
+    outline: none;
+    margin-bottom: 40px;
+}
+.subs{
+    display: inline-block;
+
+}
+.fot-three span{
+    color: rgb(226, 215, 215);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fot-three .fab{
+    color: rgb(228, 208, 208);
+}
+.fot-three .fab:hover{
+    color: white;
 }

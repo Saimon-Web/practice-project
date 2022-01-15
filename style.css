@@ -23,8 +23,8 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    padding-left: 25px;
-    overflow: hidden;
+ 
+    padding: 10px;
 }
 nav ul li a:hover{
     background-color: #E25B45;
@@ -236,4 +236,82 @@ input{
 }
 .fot-three .fab:hover{
     color: white;
+}
+
+
+/* Responsibe Device  */
+@media only screen and (max-width:688px) {
+
+    nav{
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+    .first-section{
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .first-section-start{
+        flex-direction: column;
+    }
+    .first-section-info{
+        width: 100%;
+        order: 2;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .first-section-info h2{
+        font-size: 28px;
+    }
+
+    .first-section-image img{
+        width: 100%;
+       margin-top: 30px;
+       order: 1;
+    }
+    .second-section{
+        height: auto;
+    }
+    .type-part{
+        padding: 0px;
+    }
+    .album{
+        flex-wrap: wrap;
+    }
+    .type-part h2{
+        font-size: 28px;
+    }
+    .image-info{
+            margin-bottom: 100px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .single-blog{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .blog-details{
+        text-align: center;
+    }
+    footer{
+        padding: 0px;
+    }
+    .footer-part{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .fot-one,.fot-two ,.fot-three{
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+    }
+    .fot-one a{
+        text-align: center;
+    }
+    .fothead{
+        text-align: center;
+    }
 }
